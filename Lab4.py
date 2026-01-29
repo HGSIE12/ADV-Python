@@ -15,5 +15,8 @@ print("Config:", data["config"])
 
 print("Results:", data["results"])
 
+data = json.loads('{"epochs": 5}')
+print("Config:", data)
+
 with open("results.json", "w") as f:
     json.dump(data, f, indent=4)
